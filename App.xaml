@@ -198,6 +198,43 @@
     			</Grid>
     		</Grid>
     	</ControlTemplate>
+    	<ControlTemplate x:Key="ButtonMaxim" TargetType="{x:Type Button}">
+    		<Grid x:Name="grid" Background="#FFFD3D3D">
+    			<VisualStateManager.VisualStateGroups>
+    				<VisualStateGroup x:Name="CommonStates">
+    					<VisualStateGroup.Transitions>
+    						<VisualTransition GeneratedDuration="0:0:0.2"/>
+    					</VisualStateGroup.Transitions>
+    					<VisualState x:Name="Normal"/>
+    					<VisualState x:Name="MouseOver">
+    						<Storyboard>
+    							<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="grid">
+    								<EasingColorKeyFrame KeyTime="0" Value="#FFE43A3A"/>
+    							</ColorAnimationUsingKeyFrames>
+    						</Storyboard>
+    					</VisualState>
+    					<VisualState x:Name="Pressed">
+    						<Storyboard>
+    							<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="grid">
+    								<EasingColorKeyFrame KeyTime="0" Value="#FFCD2C2C"/>
+    							</ColorAnimationUsingKeyFrames>
+    						</Storyboard>
+    					</VisualState>
+    					<VisualState x:Name="Disabled"/>
+    				</VisualStateGroup>
+    			</VisualStateManager.VisualStateGroups>
+    			<Grid Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+    				<Grid Margin="5,0,0,7.562">
+    					<Rectangle Fill="{x:Null}" HorizontalAlignment="Left" Height="12.438" Margin="0" VerticalAlignment="Top" Width="15" Stroke="#FFE8E8E8"/>
+    					<Rectangle Fill="#FFE8E8E8" HorizontalAlignment="Center" Height="3" VerticalAlignment="Top" Width="15" SnapsToDevicePixels="True"/>
+    				</Grid>
+    				<Grid Margin="0,7.562,5,0">
+    					<Rectangle Fill="#FFFD3D3D" HorizontalAlignment="Left" Height="12.438" Margin="0" VerticalAlignment="Top" Width="15" Stroke="#FFE8E8E8"/>
+    					<Rectangle Fill="#FFE8E8E8" HorizontalAlignment="Center" Height="3" VerticalAlignment="Top" Width="15" Margin="0" SnapsToDevicePixels="True"/>
+    				</Grid>
+    			</Grid>
+    		</Grid>
+    	</ControlTemplate>
          
     </Application.Resources>
 </Application>

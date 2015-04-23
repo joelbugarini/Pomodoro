@@ -357,9 +357,18 @@
 	</Window.Resources>
 	<Grid Background="#FFFD3D3D">
 		<Grid x:Name="ContainerWin" Margin="0" Height="50" VerticalAlignment="Top">
-			<Rectangle x:Name="Dragable" Fill="#FFFD3D3D" Margin="0,0,80,0" Height="40" VerticalAlignment="Top" MouseLeftButtonDown="Dragable_MouseLeftButtonDown"/>
-			<StackPanel x:Name="WindowControl" Margin="0" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <Button x:Name="ButonWindow" MouseDoubleClick="ButonWindow_MouseDoubleClick" >
+                <Button.Template>
+                    <ControlTemplate>
+                        <Rectangle x:Name="Dragable" Fill="#FFFD3D3D" Margin="0,0,80,0" Height="40" VerticalAlignment="Top" MouseLeftButtonDown="Dragable_MouseLeftButtonDown" />
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+            <StackPanel x:Name="WindowControl" Margin="0" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
 				<Button x:Name="ButtonMinimize" Content="Button" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Template="{DynamicResource ButtonMinimize}" Height="40" Click="ButtonMinimize_Click"/>
+				<Button x:Name="ButtonMaximize" Content="Button" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Template="{DynamicResource ButtonMaxim}" Height="40" Click="ButtonMaximize_Click" />
 
 				<Button x:Name="ButtonClose" Content="Button" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Template="{DynamicResource ButtonClose}" Height="40" Click="ButtonClose_Click"/>
 			</StackPanel>
