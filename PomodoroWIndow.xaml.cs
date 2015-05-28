@@ -148,7 +148,7 @@ namespace Pomodoro
             time = time.Subtract(new TimeSpan(0, 0, 1));
             TimerMinutes.Content = time.Minutes;
             TimerSeconds.Content = time.ToString("ss");
-            this.Title = time.Minutes + ":" + time.Seconds;
+            this.Title = time.ToString("mm") + ":" + time.ToString("ss");
         }
 
         private void OnWorkTimeEnd(object source, EventArgs e)
