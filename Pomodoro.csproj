@@ -88,6 +88,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="FlashWindowHelper.cs" />
+    <Compile Include="PomodoroArray.cs" />
     <Compile Include="PomodoroWIndow.xaml.cs">
       <DependentUpon>PomodoroWIndow.xaml</DependentUpon>
       <SubType>Code</SubType>
