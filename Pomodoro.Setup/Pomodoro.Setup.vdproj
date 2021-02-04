@@ -266,7 +266,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Pomodoro.Setup"
         "ProductCode" = "8:{F504918D-B841-465A-8333-59DBF028F9A9}"
-        "PackageCode" = "8:{595A7F29-AD11-47CB-A787-F7C062BF9DFC}"
+        "PackageCode" = "8:{0A5B511E-BFC1-4948-9E0F-85F77168395F}"
         "UpgradeCode" = "8:{B9CBF602-BD8B-43AE-BF60-610593E047BE}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -386,6 +386,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_281C8DA0EB5942FCB98C1D66E018D249"
+            {
+            "Name" = "8:Tasks.txt"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_E02F3C65374342CC995437BDF911CE96"
+            "Folder" = "8:_B87691CA66C44562B624DF3354C771D4"
+            "WorkingFolder" = "8:_3BEFE6773C7941E5B8929A2C885778B7"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_5C09A53D6329449CBCF4AA54E1FB6268"
             {
             "Name" = "8:Pomodoro"
