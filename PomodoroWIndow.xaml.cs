@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Windows.Threading;
 
@@ -19,7 +22,7 @@ namespace Pomodoro
             PomodoroArray = new PomodoroArray(4, 25, 5, 15);
             Test = false;
             Streak = ToTime(25);
-            CreateWorkTimer();            
+            CreateWorkTimer();
         }
 
         private void CreateWorkTimer()
@@ -44,7 +47,9 @@ namespace Pomodoro
             else {
                 TimerSeconds.Content = Streak.ToString("ss");
                 TimerMinutes.Content = Streak.Minutes;
-            }                     
+                Title = Streak.Minutes + ":" + Streak.ToString("ss");
+            }
+
         }
 
 
@@ -80,6 +85,7 @@ namespace Pomodoro
             ButtonNext.IsEnabled = false;
             ButtonPrevious.IsEnabled = false;
 
+            Title = "Pomodoro";
             Clock.Stop();
         }
 
@@ -121,5 +127,6 @@ namespace Pomodoro
         {
            return (Test) ? TimeSpan.FromSeconds(number) : TimeSpan.FromMinutes(number);
         }
+
     }
 }
