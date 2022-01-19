@@ -1,0 +1,17 @@
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\bin\Debug\Pomodoro.ico
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\bin\Debug\Pomodoro.exe.config
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\bin\Debug\Pomodoro.exe
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\bin\Debug\Pomodoro.pdb
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\PomodoroWIndow.baml
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\App.baml
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\PomodoroWIndow.g.cs
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\App.g.cs
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\Pomodoro_Content.g.cs
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\Pomodoro_MarkupCompile.cache
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\Pomodoro.g.resources
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\Pomodoro.Properties.Resources.resources
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csproj.GenerateResource.cache
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\Pomodoro.csproj.CoreCompileInputs.cache
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\Pomodoro.exe
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\obj\Debug\Pomodoro.pdb
+C:\Users\Joel\workspace\Pomodoro\Pomodoro\bin\Debug\Fonts\PoiretOne-Regular.ttf
