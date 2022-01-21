@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Media;
 using System.Windows;
 using System.Windows.Threading;
 
@@ -35,7 +37,15 @@ namespace Pomodoro
             Streak = Streak - TimeSpan.FromSeconds(1);
             if (Streak.CompareTo(TimeSpan.FromSeconds(0))==0)
             {
-                Beep();
+                if (PomodoroArray.Peek() == PomodoroArray.StreakLength) 
+                {
+                    Beep(Properties.Resources.right);
+                }
+                else 
+                {
+                    Beep(Properties.Resources.left);
+                }
+                
                 PomodoroArray.Next();
                 Streak = ToTime(PomodoroArray.GetCurrentStreakLength());
                 TimerSeconds.Content = "00";
@@ -88,11 +98,12 @@ namespace Pomodoro
 
         #endregion
 
-        public void Beep()
+        public void Beep(UnmanagedMemoryStream sound_resource)
         {
             var helper = new FlashWindowHelper(Application.Current);
             helper.FlashApplicationWindow();
-            System.Media.SystemSounds.Exclamation.Play();
+            SoundPlayer snd = new SoundPlayer(sound_resource);
+            snd.Play();
         }
 
         public TimeSpan ToTime(int number)

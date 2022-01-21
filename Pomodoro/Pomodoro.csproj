@@ -128,6 +128,8 @@
       <AutoFill>True</AutoFill>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\left.wav" />
+    <None Include="Resources\right.wav" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pomodoro.ico">

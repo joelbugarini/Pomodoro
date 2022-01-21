@@ -10,7 +10,7 @@ namespace Pomodoro
         private int[] Pomodoro { get; set; }
 
         private int StreaksNumber { get; set; }
-        private int StreakLength { get; set; }
+        public int StreakLength { get; set; }
         private int ShortBreakLength { get; set; }
         private int LongStreakLength { get; set; }
         private int CurrentStreak { get; set; }
@@ -60,6 +60,18 @@ namespace Pomodoro
         public int GetCurrentStreakLength()
         {
             return Pomodoro[CurrentStreak];
+        }
+
+        public int Peek() 
+        {
+            if (CurrentStreak == Pomodoro.Length - 1)
+            {
+                return Pomodoro[0];
+            }
+            else
+            {
+                return Pomodoro[CurrentStreak + 1];
+            }            
         }
     }
 }
